@@ -11,4 +11,4 @@ class TambahPointStafController extends Controller
     // Ini akan mengembalikan tampilan Tambah Data Siswa.
     return view('TambahPointStaf');
     }
-}
+} 
