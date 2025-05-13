@@ -14,7 +14,7 @@ use App\Http\Controllers\TambahPointStafController;
 use App\Http\Controllers\TambahNilaiStafController;
 use App\Http\Controllers\DaftarPointStafController;
 use App\Http\Controllers\DashboardSiswaController;
-
+use App\Http\Controllers\ProfilSiswaController;
 
 
 Route::get('/', [LandingPageController::class, 'LandingPage'])->name('LandingPage');
@@ -28,3 +28,4 @@ Route::get('/TambahNilaiStaf', [TambahNilaiStafController::class, 'TambahNilaiSt
 Route::get('/IjinKeluarStaf', [IjinKeluarStafController::class, 'IjinKeluarStaf'])->name('IjinKeluarStaf');
 Route::get('/DaftarPointStaf', [DaftarPointStafController::class, 'DaftarPointStaf'])->name('DaftarPointStaf');
 Route::get('/DashboardSiswa', [DashboardSiswaController::class, 'DashboardSiswa'])->name('DashboardSiswa');
+Route::get('/ProfilSiswa', [ProfilSiswaController::class, 'ProfilSiswa'])->name('ProfilSiswa');
