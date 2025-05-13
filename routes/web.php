@@ -3,6 +3,7 @@
 use App\Http\Controllers\ListBarangController;
 use Illuminate\Support\Facades\Route;
 Use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DashboardStafController;
 
 //Route::get('/', function () {
 //    return view('welcome');
@@ -11,6 +12,7 @@ Use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/contact', [HomeController::class, 'contact']);
+Route::get('/DashboardStaf', [DashboardStafController::class, 'DashboardStaf'])->name('DashboardStaf');
 Route::get('/welcome', function () {
     return view('welcome');
 });
