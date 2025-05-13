@@ -17,6 +17,7 @@ use App\Http\Controllers\DashboardSiswaController;
 use App\Http\Controllers\ProfilSiswaController;
 use App\Http\Controllers\NilaiSiswaController;
 use App\Http\Controllers\PointSiswaController;
+use App\Http\Controllers\AbsenSiswaController;
 
 Route::get('/', [LandingPageController::class, 'LandingPage'])->name('LandingPage');
 Route::get('/Login', [LoginController::class, 'Login'])->name('Login');
@@ -32,3 +33,4 @@ Route::get('/DashboardSiswa', [DashboardSiswaController::class, 'DashboardSiswa'
 Route::get('/ProfilSiswa', [ProfilSiswaController::class, 'ProfilSiswa'])->name('ProfilSiswa');
 Route::get('/NilaiSiswa', [NilaiSiswaController::class, 'NilaiSiswa'])->name('NilaiSiswa');
 Route::get('/PointSiswa', [PointSiswaController::class, 'PointSiswa'])->name('PointSiswa');
+Route::get('/AbsenSiswa', [AbsenSiswaController::class, 'AbsenSiswa'])->name('AbsenSiswa');
