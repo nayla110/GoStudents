@@ -18,6 +18,8 @@ use App\Http\Controllers\ProfilSiswaController;
 use App\Http\Controllers\NilaiSiswaController;
 use App\Http\Controllers\PointSiswaController;
 use App\Http\Controllers\AbsenSiswaController;
+use App\Http\Controllers\IjinKeluarSiswaController;
+
 
 Route::get('/', [LandingPageController::class, 'LandingPage'])->name('LandingPage');
 Route::get('/Login', [LoginController::class, 'Login'])->name('Login');
@@ -34,3 +36,4 @@ Route::get('/ProfilSiswa', [ProfilSiswaController::class, 'ProfilSiswa'])->name(
 Route::get('/NilaiSiswa', [NilaiSiswaController::class, 'NilaiSiswa'])->name('NilaiSiswa');
 Route::get('/PointSiswa', [PointSiswaController::class, 'PointSiswa'])->name('PointSiswa');
 Route::get('/AbsenSiswa', [AbsenSiswaController::class, 'AbsenSiswa'])->name('AbsenSiswa');
+Route::get('/IjinKeluarSiswa', [IjinKeluarSiswaController::class, 'IjinKeluarSiswa'])->name('IjinKeluarSiswa');
