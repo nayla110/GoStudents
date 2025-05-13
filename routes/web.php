@@ -4,12 +4,14 @@ use App\Http\Controllers\ListBarangController;
 use Illuminate\Support\Facades\Route;
 Use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LandingPageController;
+use App\Http\Controllers\LoginController;
 
 
 
 
 
 Route::get('/', [LandingPageController::class, 'LandingPage'])->name('LandingPage');
+Route::get('/Login', [LoginController::class, 'Login'])->name('Login');
 
 //Route::get('/', function () {
 //    return view('welcome');
